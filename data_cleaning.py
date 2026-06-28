@@ -23,17 +23,25 @@ else:
 # CASE 2: To combine and merge all CSV files into a single DataFrame
 print("===================================")
 print("\n[2] Merging files (Concatenating DataFrames).")
-all_date = []
+
+all_data = []
 total_rows = 0
 for file in csv_files:
     df = pd.read_csv(file)
-    all_date.append(df)
+    
+    # Get the operation name from the file name
+    name = os.path.basename(file).replace(".csv", "")
+    name = name.replace("_Field_1", "").replace("_Field_2", "")
+    
+    # Add the operation column
+    df["operation"] = name
+    
+    all_data.append(df)
     total_rows += len(df)
-    print(f"Read {len(df)} rows from {file}")
-print(f"Total rows across all files: {total_rows}")
+    print(f"   Read: {os.path.basename(file)} ({len(df)} rows) -> {name}")
 
 # to concatenate all DataFrames into a single DataFrame
-merged_df = pd.concat(all_date, ignore_index=True)
+merged_df = pd.concat(all_data, ignore_index=True)
 print("All CSV files have been merged into a single DataFrame.")
 
 
