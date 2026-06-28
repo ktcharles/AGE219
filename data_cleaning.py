@@ -29,7 +29,7 @@ total_rows = 0
 for file in csv_files:
     df = pd.read_csv(file)
     
-    # Get the operation name from the file name
+    # Get operation name from file name
     name = os.path.basename(file).replace(".csv", "")
     name = name.replace("_Field_1", "").replace("_Field_2", "")
     
