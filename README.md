@@ -78,7 +78,7 @@ Most of Agricultural tractors consume large amounts of fuel and require regular 
 ### additional graph: Animated Trend Graph
 
 ![Animated Trend](trend_animation.gif)
-*Animated GIF showing the real demonstration of fuel consumption trend being drawn step by step. This demonstrates advanced Python skills in data visualization.*
+*Animated GIF showing the real demonstration of fuel consumption trend being drawn step by step. This demonstrates advanced Python skills in data visualization. and help student to see the real trend demonstration*
 
 ### 4.3 Conclusion
 
@@ -98,11 +98,9 @@ Based on the analysis of tractor telemetry data:
 ---
 
 #### 5. References
-
-1. Technical University of Munich. (2024). Agricultural Load Cycles: Tractor Mission Profiles from Recorded GNSS and CAN Bus Data. Zenodo.
-2. ASABE Standards. (2020). Agricultural Machinery Management Data.
-3. Compendium 9: Data Analysis and Visualization. AGE 219 Lecture Notes.
-
+1. ASABE Standards. (2020). Agricultural Machinery Management Data.
+2. Compendium 9: Data Analysis and Visualization. AGE 219 Lecture Notes.
+3. Technical University of Munich. (2024). Agricultural Load Cycles: Tractor Mission Profiles from Recorded GNSS and CAN Bus Data. Zenodo.
 ---
 
 **@kadefue** - This project is submitted for grading as per the AGE 219 Capstone Project requirements. Submission date: 2nd July 2026.
